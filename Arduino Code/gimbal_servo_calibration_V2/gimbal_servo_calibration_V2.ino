@@ -20,7 +20,7 @@ void setup() {
 
   delay(10);
 
-  Serial.println("\nPress any key to determine gimbal @ 90 deg using writeMicroseconds function.");
+  Serial.println("\nPress any key to determine gimbal @ 90 deg using setPWM function.");
   while(!Serial.available());
   while(Serial.available()) Serial.read();
 
@@ -31,7 +31,7 @@ void setup() {
 void loop() {
   // Calibrates servo moving counter clockwise while looking at servo opposite of white spline gear.
   while(true){
-    Serial.println("\nPress any key to increase servo angle by increasing microseconds a set interval.");
+    Serial.println("\nPress any key to increase servo angle by increasing microseconds in set interval.");
     while(!Serial.available());
     while(Serial.available()) Serial.read();
     pulseLength -= interval; // Change + to - to calibrate clockwise while looking at servo opposite of white spline gear.
