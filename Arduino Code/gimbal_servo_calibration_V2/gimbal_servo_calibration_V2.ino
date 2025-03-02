@@ -5,7 +5,7 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 #define SERVO_FREQ 50 // Analog servos run at ~50 Hz updates
 
-uint8_t servoNumber = 1;
+uint8_t servoNumber = 3;
 uint16_t pulseLength = 317;
 uint16_t interval = 5;
 
