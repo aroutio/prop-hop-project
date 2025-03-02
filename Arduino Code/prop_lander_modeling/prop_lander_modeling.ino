@@ -201,7 +201,7 @@ void setup()
 
   pwm.setPWM(upperGimbal, 0, upperGimbalCenter);
   delay(15);
-  pwm.setPWM(lowerGimbal, 0, upperGimbalCenter);
+  pwm.setPWM(lowerGimbal, 0, lowerGimbalCenter);
   delay(15);
   Serial.println("Gimbal Centered");
   sendRadioComms("Gimbal Centered");
